@@ -1,0 +1,325 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F0F8FF; 
+    color: #333; 
+}
+
+/* Header Styles */
+header {
+    background: #003366; 
+    color: #FFFFFF; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    background: #87CEEB; 
+    color: #003366; 
+    padding: 10px;
+    border-radius: 5px; 
+    text-align: center;
+}
+
+/* Navigation Styles */
+.Navi {
+    margin: 10px 0;
+    background: #003366; 
+    padding: 10px 0;
+}
+
+.Navi ul {
+    list-style: none; 
+}
+
+.Navi ul li {
+    display: inline;   
+    margin: 0 15px;
+}
+
+.Navi a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.Navi a:hover {
+    text-decoration: underline; 
+}
+
+/* Background Image and Overlay Content */
+.background-image-container {
+    position: relative;
+    width: 100%;
+    min-height: 400px; /* Ensure minimum height */
+    background-size: cover;
+    background-position: center; /* Center the image */
+    overflow: hidden; /* Hide overflow if image goes out of bounds */
+}
+
+.hospital-bg {
+    width: 100%; /* Full width for the background image */
+    height: 100%; /* Ensure it covers the height */
+    object-fit: cover; /* Cover both sides */
+}
+
+.overlay-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Subtle overlay for readability */
+}
+
+.doctor-img {
+    width: 150px;
+    height: auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/* Search Container */
+.search-container {
+    width: 100%;
+    max-width: 400px; /* Limit search bar width */
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for search bar */
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 25px 0 0 25px; /* Rounded left side */
+    font-size: 1rem;
+    outline: none; /* Remove outline */
+}
+
+.search-container input[type="submit"] {
+    background-color: #003366; /* Button color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 25px 25px 0; /* Rounded right side */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #00509e; /* Darker shade on hover */
+}
+/* Medical Services Section */
+.Our-Medical-Services {
+    text-align: center; /* Center the section text */
+    padding: 40px 20px; /* Padding around the section */
+}
+
+.Our-Medical-Services h2{
+    color: #003366;
+    background-color: #87CEEB;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.services-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center the grid items */
+    margin-top: 20px; /* Space above the grid */
+}
+
+.service-item {
+    flex-basis: calc(33.333% - 30px); /* Three columns */
+    margin: 15px;
+    text-align: center;
+}
+
+.service-image {
+    width: 100px; /* Set width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%; /* Optional: rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.service-info {
+    color: #003366; /* Matching color for text */
+}
+
+.service-name {
+    font-size: 1.2rem; /* Increase font size for the service name */
+    margin: 0; /* Remove default margin */
+}
+
+.service-description {
+    font-size: 1rem; /* Adjust description size */
+    color: #666; /* A lighter color for the description */
+    margin: 5px 0 0; /* Space above the description */
+}
+
+
+/* Doctors Section */
+.Find-a-Doctor {
+    text-align: center; /* Center align the section text */
+}
+.Find-a-Doctor h2{
+    color: #003366;
+    background-color: #87CEEB;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.doctors-grid {
+    display: flex;
+    justify-content: center; /* Center the grid */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between doctor items */
+}
+
+.doctor-item {
+    background-color: #f9f9f9; /* Background for doctor item */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding around the content */
+    width: 150px; /* Fixed width for uniformity */
+    text-align: center; /* Center align text within each item */
+}
+
+.doctor-image {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20%; /* Optional: make the image circular */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.doctor-name {
+    font-size: 1.2rem; /* Increase font size for the name */
+    color: #003366; /* Name color */
+}
+
+.doctor-title {
+    font-size: 1rem; /* Title font size */
+    color: #666; /* Title color */
+}
+
+/* Testimonials Section Styles */
+.Testimonials {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center text alignment */
+}
+
+.Testimonials h2 {
+    color: #003366;
+    background-color: #87CEEB;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.testimonials-grid {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.testimonial-item {
+    background-color: #fff; /* White background for each testimonial */
+    border: 1px solid #e0e0e0; /* Light border around testimonials */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside each testimonial */
+}
+
+.testimonial-item p {
+    font-size: 1.2em; /* Font size for the testimonial text */
+    color: #555; /* Medium text color */
+    margin: 0; /* Remove default margin */
+}
+
+.testimonial-item p::before {
+    content: "“"; /* Add quotation mark before testimonial */
+    font-size: 3em; /* Size of the quote mark */
+    color: #aaa; /* Color for the quote mark */
+    position: absolute; /* Position it absolutely */
+    left: 20px; /* Adjust position */
+    top: -15px; /* Adjust position */
+}
+
+.testimonial-item p::after {
+    content: "”"; /* Add quotation mark after testimonial */
+    font-size: 3em; /* Size of the quote mark */
+    color: #aaa; /* Color for the quote mark */
+    position: absolute; /* Position it absolutely */
+    right: 20px; /* Adjust position */
+    bottom: -15px; /* Adjust position */
+}
+
+
+@media (max-width: 768px) {
+    .Testimonials {
+        padding: 20px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Stack testimonials on smaller screens */
+    }
+
+    .testimonial-item {
+        margin: 10px auto; /* Reduce margin on smaller screens */
+    }
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #003366; /* Distinct footer background */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer-info div {
+    flex: 1;
+    padding: 0 10px;
+}
+.footer-info h3 {
+    margin-bottom: 10px;
+    color: #87CEEB;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+
